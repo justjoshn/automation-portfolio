@@ -1,0 +1,428 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[components] - Products should render correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="Products__Container-sc-uhudcz-0 kTCRJn"
+        data-cy="products-container"
+      >
+        <div
+          class="Product__Container-sc-124al1g-2 kgHzaj"
+          data-cy="product-container-8552515751438644"
+          tabindex="1"
+        >
+          <div
+            class="Product__Stopper-sc-124al1g-3 iirFfh"
+            data-cy="free-shipping-8552515751438644"
+          >
+            Free shipping
+          </div>
+          <div
+            alt="Cropped Stay Groovy off white"
+            class="Product__Image-sc-124al1g-1"
+            data-cy="product-image-8552515751438644"
+          />
+          <p
+            class="Product__Title-sc-124al1g-4 iKNVRs"
+            data-cy="product-title-8552515751438644"
+          >
+            Cropped Stay Groovy off white
+          </p>
+          <div
+            class="Product__Price-sc-124al1g-5 iZlLwH"
+            data-cy="product-price-8552515751438644"
+          >
+            <p
+              class="Product__Val-sc-124al1g-6 eKyHNu"
+            >
+              <small>
+                $
+              </small>
+              <b>
+                10
+              </b>
+              <span>
+                .90
+              </span>
+            </p>
+            <p
+              class="Product__Installment-sc-124al1g-7 hBZpTG"
+            >
+              <span>
+                or 
+                9
+                 x
+              </span>
+              <b>
+                $
+                1.21
+              </b>
+            </p>
+          </div>
+          <button
+            class="Product__BuyButton-sc-124al1g-0 jCZDKU"
+            data-cy="add-to-cart-8552515751438644"
+            tabindex="-1"
+          >
+            Add to cart
+          </button>
+        </div>
+        <div
+          class="Product__Container-sc-124al1g-2 rtefv"
+          data-cy="product-container-39876704341265610"
+          tabindex="1"
+        >
+          <div
+            class="Product__Stopper-sc-124al1g-3 iirFfh"
+            data-cy="free-shipping-39876704341265610"
+          >
+            Free shipping
+          </div>
+          <div
+            alt="Basic Cactus White T-shirt"
+            class="Product__Image-sc-124al1g-1"
+            data-cy="product-image-39876704341265610"
+          />
+          <p
+            class="Product__Title-sc-124al1g-4 iKNVRs"
+            data-cy="product-title-39876704341265610"
+          >
+            Basic Cactus White T-shirt
+          </p>
+          <div
+            class="Product__Price-sc-124al1g-5 iZlLwH"
+            data-cy="product-price-39876704341265610"
+          >
+            <p
+              class="Product__Val-sc-124al1g-6 eKyHNu"
+            >
+              <small>
+                $
+              </small>
+              <b>
+                13
+              </b>
+              <span>
+                .25
+              </span>
+            </p>
+            <p
+              class="Product__Installment-sc-124al1g-7 hBZpTG"
+            >
+              <span>
+                or 
+                3
+                 x
+              </span>
+              <b>
+                $
+                4.42
+              </b>
+            </p>
+          </div>
+          <button
+            class="Product__BuyButton-sc-124al1g-0 jCZDKU"
+            data-cy="add-to-cart-39876704341265610"
+            tabindex="-1"
+          >
+            Add to cart
+          </button>
+        </div>
+        <div
+          class="Product__Container-sc-124al1g-2 rowhT"
+          data-cy="product-container-9197907543445676"
+          tabindex="1"
+        >
+          <div
+            alt="Skater Black Sweatshirt"
+            class="Product__Image-sc-124al1g-1"
+            data-cy="product-image-9197907543445676"
+          />
+          <p
+            class="Product__Title-sc-124al1g-4 iKNVRs"
+            data-cy="product-title-9197907543445676"
+          >
+            Skater Black Sweatshirt
+          </p>
+          <div
+            class="Product__Price-sc-124al1g-5 iZlLwH"
+            data-cy="product-price-9197907543445676"
+          >
+            <p
+              class="Product__Val-sc-124al1g-6 eKyHNu"
+            >
+              <small>
+                $
+              </small>
+              <b>
+                25
+              </b>
+              <span>
+                .90
+              </span>
+            </p>
+            <p
+              class="Product__Installment-sc-124al1g-7 hBZpTG"
+            >
+              <span>
+                or 
+                12
+                 x
+              </span>
+              <b>
+                $
+                2.16
+              </b>
+            </p>
+          </div>
+          <button
+            class="Product__BuyButton-sc-124al1g-0 jCZDKU"
+            data-cy="add-to-cart-9197907543445676"
+            tabindex="-1"
+          >
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="Products__Container-sc-uhudcz-0 kTCRJn"
+      data-cy="products-container"
+    >
+      <div
+        class="Product__Container-sc-124al1g-2 kgHzaj"
+        data-cy="product-container-8552515751438644"
+        tabindex="1"
+      >
+        <div
+          class="Product__Stopper-sc-124al1g-3 iirFfh"
+          data-cy="free-shipping-8552515751438644"
+        >
+          Free shipping
+        </div>
+        <div
+          alt="Cropped Stay Groovy off white"
+          class="Product__Image-sc-124al1g-1"
+          data-cy="product-image-8552515751438644"
+        />
+        <p
+          class="Product__Title-sc-124al1g-4 iKNVRs"
+          data-cy="product-title-8552515751438644"
+        >
+          Cropped Stay Groovy off white
+        </p>
+        <div
+          class="Product__Price-sc-124al1g-5 iZlLwH"
+          data-cy="product-price-8552515751438644"
+        >
+          <p
+            class="Product__Val-sc-124al1g-6 eKyHNu"
+          >
+            <small>
+              $
+            </small>
+            <b>
+              10
+            </b>
+            <span>
+              .90
+            </span>
+          </p>
+          <p
+            class="Product__Installment-sc-124al1g-7 hBZpTG"
+          >
+            <span>
+              or 
+              9
+               x
+            </span>
+            <b>
+              $
+              1.21
+            </b>
+          </p>
+        </div>
+        <button
+          class="Product__BuyButton-sc-124al1g-0 jCZDKU"
+          data-cy="add-to-cart-8552515751438644"
+          tabindex="-1"
+        >
+          Add to cart
+        </button>
+      </div>
+      <div
+        class="Product__Container-sc-124al1g-2 rtefv"
+        data-cy="product-container-39876704341265610"
+        tabindex="1"
+      >
+        <div
+          class="Product__Stopper-sc-124al1g-3 iirFfh"
+          data-cy="free-shipping-39876704341265610"
+        >
+          Free shipping
+        </div>
+        <div
+          alt="Basic Cactus White T-shirt"
+          class="Product__Image-sc-124al1g-1"
+          data-cy="product-image-39876704341265610"
+        />
+        <p
+          class="Product__Title-sc-124al1g-4 iKNVRs"
+          data-cy="product-title-39876704341265610"
+        >
+          Basic Cactus White T-shirt
+        </p>
+        <div
+          class="Product__Price-sc-124al1g-5 iZlLwH"
+          data-cy="product-price-39876704341265610"
+        >
+          <p
+            class="Product__Val-sc-124al1g-6 eKyHNu"
+          >
+            <small>
+              $
+            </small>
+            <b>
+              13
+            </b>
+            <span>
+              .25
+            </span>
+          </p>
+          <p
+            class="Product__Installment-sc-124al1g-7 hBZpTG"
+          >
+            <span>
+              or 
+              3
+               x
+            </span>
+            <b>
+              $
+              4.42
+            </b>
+          </p>
+        </div>
+        <button
+          class="Product__BuyButton-sc-124al1g-0 jCZDKU"
+          data-cy="add-to-cart-39876704341265610"
+          tabindex="-1"
+        >
+          Add to cart
+        </button>
+      </div>
+      <div
+        class="Product__Container-sc-124al1g-2 rowhT"
+        data-cy="product-container-9197907543445676"
+        tabindex="1"
+      >
+        <div
+          alt="Skater Black Sweatshirt"
+          class="Product__Image-sc-124al1g-1"
+          data-cy="product-image-9197907543445676"
+        />
+        <p
+          class="Product__Title-sc-124al1g-4 iKNVRs"
+          data-cy="product-title-9197907543445676"
+        >
+          Skater Black Sweatshirt
+        </p>
+        <div
+          class="Product__Price-sc-124al1g-5 iZlLwH"
+          data-cy="product-price-9197907543445676"
+        >
+          <p
+            class="Product__Val-sc-124al1g-6 eKyHNu"
+          >
+            <small>
+              $
+            </small>
+            <b>
+              25
+            </b>
+            <span>
+              .90
+            </span>
+          </p>
+          <p
+            class="Product__Installment-sc-124al1g-7 hBZpTG"
+          >
+            <span>
+              or 
+              12
+               x
+            </span>
+            <b>
+              $
+              2.16
+            </b>
+          </p>
+        </div>
+        <button
+          class="Product__BuyButton-sc-124al1g-0 jCZDKU"
+          data-cy="add-to-cart-9197907543445676"
+          tabindex="-1"
+        >
+          Add to cart
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
