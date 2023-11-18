@@ -26,12 +26,18 @@ const Cart = () => {
 
   return (
     <S.Container isOpen={isOpen} data-cy="cart-container">
-      <S.CartButton onClick={handleToggleCart(isOpen)} data-cy="cart-toggle-button">
+      <S.CartButton
+        onClick={handleToggleCart(isOpen)}
+        data-cy="cart-toggle-button"
+      >
         {isOpen ? (
           <span data-cy="close-cart">X</span>
         ) : (
           <S.CartIcon data-cy="cart-icon">
-            <S.CartQuantity title="Products in cart quantity" data-cy="cart-quantity">
+            <S.CartQuantity
+              title="Products in cart quantity"
+              data-cy="cart-quantity"
+            >
               {total.productQuantity}
             </S.CartQuantity>
           </S.CartIcon>
@@ -42,7 +48,9 @@ const Cart = () => {
         <S.CartContent data-cy="cart-content">
           <S.CartContentHeader data-cy="cart-content-header">
             <S.CartIcon large data-cy="cart-icon-large">
-              <S.CartQuantity data-cy="cart-quantity-header">{total.productQuantity}</S.CartQuantity>
+              <S.CartQuantity data-cy="cart-quantity-header">
+                {total.productQuantity}
+              </S.CartQuantity>
             </S.CartIcon>
             <S.HeaderTitle data-cy="cart-header-title">Cart</S.HeaderTitle>
           </S.CartContentHeader>
@@ -52,7 +60,9 @@ const Cart = () => {
           <S.CartFooter data-cy="cart-footer">
             <S.Sub data-cy="subtotal-label">SUBTOTAL</S.Sub>
             <S.SubPrice data-cy="subtotal-price">
-              <S.SubPriceValue data-cy="subtotal-value">{`${total.currencyFormat} ${formatPrice(
+              <S.SubPriceValue data-cy="subtotal-value">{`${
+                total.currencyFormat
+              } ${formatPrice(
                 total.totalPrice,
                 total.currencyId
               )}`}</S.SubPriceValue>
@@ -69,7 +79,11 @@ const Cart = () => {
                 ) : null}
               </S.SubPriceInstallment>
             </S.SubPrice>
-            <S.CheckoutButton onClick={handleCheckout} autoFocus data-cy="checkout-button">
+            <S.CheckoutButton
+              onClick={handleCheckout}
+              autoFocus
+              data-cy="checkout-button"
+            >
               Checkout
             </S.CheckoutButton>
           </S.CartFooter>

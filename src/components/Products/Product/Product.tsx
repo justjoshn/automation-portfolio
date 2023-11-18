@@ -59,7 +59,9 @@ const Product = ({ product }: IProps) => {
       data-cy={`product-container-${sku}`} // Added data-cy attribute for the product container
       sku={sku}
     >
-      {isFreeShipping && <S.Stopper data-cy={`free-shipping-${sku}`}>Free shipping</S.Stopper>}
+      {isFreeShipping && (
+        <S.Stopper data-cy={`free-shipping-${sku}`}>Free shipping</S.Stopper>
+      )}
       <S.Image alt={title} data-cy={`product-image-${sku}`} />
       <S.Title data-cy={`product-title-${sku}`}>{title}</S.Title>
       <S.Price data-cy={`product-price-${sku}`}>
