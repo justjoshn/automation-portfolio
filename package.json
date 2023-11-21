@@ -83,6 +83,7 @@
     "@playwright/test": "^1.39.0",
     "@testing-library/react-hooks": "^7.0.2",
     "@types/styled-components": "^5.1.23",
+    "cypress": "^13.5.1",
     "firebase-tools": "^10.2.1",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.10",
