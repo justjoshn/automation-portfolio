@@ -6,19 +6,19 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="Cart__Container-sc-1h98xa9-1 OVjcy"
+        class="Cart__Container-sc-1h98xa9-1 bYpqyd"
         data-cy="cart-container"
       >
         <button
-          class="Cart__CartButton-sc-1h98xa9-0 Xqoyz"
+          class="Cart__CartButton-sc-1h98xa9-0 iUWtRE"
           data-cy="cart-toggle-button"
         >
           <div
-            class="Cart__CartIcon-sc-1h98xa9-2 dFOmZq"
+            class="Cart__CartIcon-sc-1h98xa9-2 gagYBJ"
             data-cy="cart-icon"
           >
             <div
-              class="Cart__CartQuantity-sc-1h98xa9-3 gkShyn"
+              class="Cart__CartQuantity-sc-1h98xa9-3 cZGDzk"
               data-cy="cart-quantity"
               title="Products in cart quantity"
             >
@@ -31,19 +31,19 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="Cart__Container-sc-1h98xa9-1 OVjcy"
+      class="Cart__Container-sc-1h98xa9-1 bYpqyd"
       data-cy="cart-container"
     >
       <button
-        class="Cart__CartButton-sc-1h98xa9-0 Xqoyz"
+        class="Cart__CartButton-sc-1h98xa9-0 iUWtRE"
         data-cy="cart-toggle-button"
       >
         <div
-          class="Cart__CartIcon-sc-1h98xa9-2 dFOmZq"
+          class="Cart__CartIcon-sc-1h98xa9-2 gagYBJ"
           data-cy="cart-icon"
         >
           <div
-            class="Cart__CartQuantity-sc-1h98xa9-3 gkShyn"
+            class="Cart__CartQuantity-sc-1h98xa9-3 cZGDzk"
             data-cy="cart-quantity"
             title="Products in cart quantity"
           >

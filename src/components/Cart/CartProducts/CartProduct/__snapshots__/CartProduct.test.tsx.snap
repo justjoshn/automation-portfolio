@@ -6,31 +6,31 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="CartProduct__Container-sc-11uohgb-0 iFEDVZ"
+        class="CartProduct__Container-sc-11uohgb-0 fJfmzi"
         data-cy="cart-product-container-8552515751438644"
       >
         <button
-          class="CartProduct__DeleteButton-sc-11uohgb-5 fZpMUH"
+          class="CartProduct__DeleteButton-sc-11uohgb-5 jEDzVU"
           data-cy="remove-product-8552515751438644"
           title="remove product from cart"
         />
         <img
           alt="Cropped Stay Groovy off white"
-          class="CartProduct__Image-sc-11uohgb-7 dSflEM"
+          class="CartProduct__Image-sc-11uohgb-7 eUjxOT"
           data-cy="product-image-8552515751438644"
           src="8552515751438644-1-cart.webp"
         />
         <div
-          class="CartProduct__Details-sc-11uohgb-1 dWfwVY"
+          class="CartProduct__Details-sc-11uohgb-1 iolZxX"
           data-cy="product-details-8552515751438644"
         >
           <p
-            class="CartProduct__Title-sc-11uohgb-2 jVsMjn"
+            class="CartProduct__Title-sc-11uohgb-2 lkGRus"
           >
             Cropped Stay Groovy off white
           </p>
           <p
-            class="CartProduct__Desc-sc-11uohgb-3 bRgwLG"
+            class="CartProduct__Desc-sc-11uohgb-3 gEKgsV"
           >
             S | White T-shirt
              
@@ -40,7 +40,7 @@ Object {
           </p>
         </div>
         <div
-          class="CartProduct__Price-sc-11uohgb-4 NDRzT"
+          class="CartProduct__Price-sc-11uohgb-4 cFxNDU"
         >
           <p
             data-cy="product-price-8552515751438644"
@@ -49,14 +49,14 @@ Object {
           </p>
           <div>
             <button
-              class="CartProduct__ChangeQuantity-sc-11uohgb-6 JoGgi"
+              class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
               data-cy="decrease-quantity-8552515751438644"
               disabled=""
             >
               -
             </button>
             <button
-              class="CartProduct__ChangeQuantity-sc-11uohgb-6 JoGgi"
+              class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
               data-cy="increase-quantity-8552515751438644"
             >
               +
@@ -68,31 +68,31 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="CartProduct__Container-sc-11uohgb-0 iFEDVZ"
+      class="CartProduct__Container-sc-11uohgb-0 fJfmzi"
       data-cy="cart-product-container-8552515751438644"
     >
       <button
-        class="CartProduct__DeleteButton-sc-11uohgb-5 fZpMUH"
+        class="CartProduct__DeleteButton-sc-11uohgb-5 jEDzVU"
         data-cy="remove-product-8552515751438644"
         title="remove product from cart"
       />
       <img
         alt="Cropped Stay Groovy off white"
-        class="CartProduct__Image-sc-11uohgb-7 dSflEM"
+        class="CartProduct__Image-sc-11uohgb-7 eUjxOT"
         data-cy="product-image-8552515751438644"
         src="8552515751438644-1-cart.webp"
       />
       <div
-        class="CartProduct__Details-sc-11uohgb-1 dWfwVY"
+        class="CartProduct__Details-sc-11uohgb-1 iolZxX"
         data-cy="product-details-8552515751438644"
       >
         <p
-          class="CartProduct__Title-sc-11uohgb-2 jVsMjn"
+          class="CartProduct__Title-sc-11uohgb-2 lkGRus"
         >
           Cropped Stay Groovy off white
         </p>
         <p
-          class="CartProduct__Desc-sc-11uohgb-3 bRgwLG"
+          class="CartProduct__Desc-sc-11uohgb-3 gEKgsV"
         >
           S | White T-shirt
            
@@ -102,7 +102,7 @@ Object {
         </p>
       </div>
       <div
-        class="CartProduct__Price-sc-11uohgb-4 NDRzT"
+        class="CartProduct__Price-sc-11uohgb-4 cFxNDU"
       >
         <p
           data-cy="product-price-8552515751438644"
@@ -111,14 +111,14 @@ Object {
         </p>
         <div>
           <button
-            class="CartProduct__ChangeQuantity-sc-11uohgb-6 JoGgi"
+            class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
             data-cy="decrease-quantity-8552515751438644"
             disabled=""
           >
             -
           </button>
           <button
-            class="CartProduct__ChangeQuantity-sc-11uohgb-6 JoGgi"
+            class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
             data-cy="increase-quantity-8552515751438644"
           >
             +

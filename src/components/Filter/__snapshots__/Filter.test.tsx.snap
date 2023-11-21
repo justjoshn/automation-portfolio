@@ -10,13 +10,13 @@ Object {
         data-cy="filter-container"
       >
         <h4
-          class="Filter__Title-sc-bj2vay-2 cVDNWF"
+          class="Filter__Title-sc-bj2vay-2 gmZMUe"
           data-cy="filter-title"
         >
           Sizes:
         </h4>
         <div
-          class="Filter__Checkbox-sc-bj2vay-1 cUzHAu"
+          class="Filter__Checkbox-sc-bj2vay-1 izYNeF"
         >
           <label>
             <input
@@ -32,7 +32,7 @@ Object {
           </label>
         </div>
         <div
-          class="Filter__Checkbox-sc-bj2vay-1 cUzHAu"
+          class="Filter__Checkbox-sc-bj2vay-1 izYNeF"
         >
           <label>
             <input
@@ -48,7 +48,7 @@ Object {
           </label>
         </div>
         <div
-          class="Filter__Checkbox-sc-bj2vay-1 cUzHAu"
+          class="Filter__Checkbox-sc-bj2vay-1 izYNeF"
         >
           <label>
             <input
@@ -64,7 +64,7 @@ Object {
           </label>
         </div>
         <div
-          class="Filter__Checkbox-sc-bj2vay-1 cUzHAu"
+          class="Filter__Checkbox-sc-bj2vay-1 izYNeF"
         >
           <label>
             <input
@@ -80,7 +80,7 @@ Object {
           </label>
         </div>
         <div
-          class="Filter__Checkbox-sc-bj2vay-1 cUzHAu"
+          class="Filter__Checkbox-sc-bj2vay-1 izYNeF"
         >
           <label>
             <input
@@ -96,7 +96,7 @@ Object {
           </label>
         </div>
         <div
-          class="Filter__Checkbox-sc-bj2vay-1 cUzHAu"
+          class="Filter__Checkbox-sc-bj2vay-1 izYNeF"
         >
           <label>
             <input
@@ -112,7 +112,7 @@ Object {
           </label>
         </div>
         <div
-          class="Filter__Checkbox-sc-bj2vay-1 cUzHAu"
+          class="Filter__Checkbox-sc-bj2vay-1 izYNeF"
         >
           <label>
             <input
@@ -136,13 +136,13 @@ Object {
       data-cy="filter-container"
     >
       <h4
-        class="Filter__Title-sc-bj2vay-2 cVDNWF"
+        class="Filter__Title-sc-bj2vay-2 gmZMUe"
         data-cy="filter-title"
       >
         Sizes:
       </h4>
       <div
-        class="Filter__Checkbox-sc-bj2vay-1 cUzHAu"
+        class="Filter__Checkbox-sc-bj2vay-1 izYNeF"
       >
         <label>
           <input
@@ -158,7 +158,7 @@ Object {
         </label>
       </div>
       <div
-        class="Filter__Checkbox-sc-bj2vay-1 cUzHAu"
+        class="Filter__Checkbox-sc-bj2vay-1 izYNeF"
       >
         <label>
           <input
@@ -174,7 +174,7 @@ Object {
         </label>
       </div>
       <div
-        class="Filter__Checkbox-sc-bj2vay-1 cUzHAu"
+        class="Filter__Checkbox-sc-bj2vay-1 izYNeF"
       >
         <label>
           <input
@@ -190,7 +190,7 @@ Object {
         </label>
       </div>
       <div
-        class="Filter__Checkbox-sc-bj2vay-1 cUzHAu"
+        class="Filter__Checkbox-sc-bj2vay-1 izYNeF"
       >
         <label>
           <input
@@ -206,7 +206,7 @@ Object {
         </label>
       </div>
       <div
-        class="Filter__Checkbox-sc-bj2vay-1 cUzHAu"
+        class="Filter__Checkbox-sc-bj2vay-1 izYNeF"
       >
         <label>
           <input
@@ -222,7 +222,7 @@ Object {
         </label>
       </div>
       <div
-        class="Filter__Checkbox-sc-bj2vay-1 cUzHAu"
+        class="Filter__Checkbox-sc-bj2vay-1 izYNeF"
       >
         <label>
           <input
@@ -238,7 +238,7 @@ Object {
         </label>
       </div>
       <div
-        class="Filter__Checkbox-sc-bj2vay-1 cUzHAu"
+        class="Filter__Checkbox-sc-bj2vay-1 izYNeF"
       >
         <label>
           <input

@@ -6,35 +6,35 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="CartProducts__Container-sc-7th5t8-0 hwjriB"
+        class="CartProducts__Container-sc-7th5t8-0 jqhzDe"
         data-cy="cart-products-container"
       >
         <div
-          class="CartProduct__Container-sc-11uohgb-0 iFEDVZ"
+          class="CartProduct__Container-sc-11uohgb-0 fJfmzi"
           data-cy="cart-product-container-8552515751438644"
         >
           <button
-            class="CartProduct__DeleteButton-sc-11uohgb-5 fZpMUH"
+            class="CartProduct__DeleteButton-sc-11uohgb-5 jEDzVU"
             data-cy="remove-product-8552515751438644"
             title="remove product from cart"
           />
           <img
             alt="Cropped Stay Groovy off white"
-            class="CartProduct__Image-sc-11uohgb-7 dSflEM"
+            class="CartProduct__Image-sc-11uohgb-7 eUjxOT"
             data-cy="product-image-8552515751438644"
             src="8552515751438644-1-cart.webp"
           />
           <div
-            class="CartProduct__Details-sc-11uohgb-1 dWfwVY"
+            class="CartProduct__Details-sc-11uohgb-1 iolZxX"
             data-cy="product-details-8552515751438644"
           >
             <p
-              class="CartProduct__Title-sc-11uohgb-2 jVsMjn"
+              class="CartProduct__Title-sc-11uohgb-2 lkGRus"
             >
               Cropped Stay Groovy off white
             </p>
             <p
-              class="CartProduct__Desc-sc-11uohgb-3 bRgwLG"
+              class="CartProduct__Desc-sc-11uohgb-3 gEKgsV"
             >
               S | White T-shirt
                
@@ -44,7 +44,7 @@ Object {
             </p>
           </div>
           <div
-            class="CartProduct__Price-sc-11uohgb-4 NDRzT"
+            class="CartProduct__Price-sc-11uohgb-4 cFxNDU"
           >
             <p
               data-cy="product-price-8552515751438644"
@@ -53,14 +53,14 @@ Object {
             </p>
             <div>
               <button
-                class="CartProduct__ChangeQuantity-sc-11uohgb-6 JoGgi"
+                class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
                 data-cy="decrease-quantity-8552515751438644"
                 disabled=""
               >
                 -
               </button>
               <button
-                class="CartProduct__ChangeQuantity-sc-11uohgb-6 JoGgi"
+                class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
                 data-cy="increase-quantity-8552515751438644"
               >
                 +
@@ -69,31 +69,31 @@ Object {
           </div>
         </div>
         <div
-          class="CartProduct__Container-sc-11uohgb-0 iFEDVZ"
+          class="CartProduct__Container-sc-11uohgb-0 fJfmzi"
           data-cy="cart-product-container-39876704341265610"
         >
           <button
-            class="CartProduct__DeleteButton-sc-11uohgb-5 fZpMUH"
+            class="CartProduct__DeleteButton-sc-11uohgb-5 jEDzVU"
             data-cy="remove-product-39876704341265610"
             title="remove product from cart"
           />
           <img
             alt="Basic Cactus White T-shirt"
-            class="CartProduct__Image-sc-11uohgb-7 dSflEM"
+            class="CartProduct__Image-sc-11uohgb-7 eUjxOT"
             data-cy="product-image-39876704341265610"
             src="39876704341265610-1-cart.webp"
           />
           <div
-            class="CartProduct__Details-sc-11uohgb-1 dWfwVY"
+            class="CartProduct__Details-sc-11uohgb-1 iolZxX"
             data-cy="product-details-39876704341265610"
           >
             <p
-              class="CartProduct__Title-sc-11uohgb-2 jVsMjn"
+              class="CartProduct__Title-sc-11uohgb-2 lkGRus"
             >
               Basic Cactus White T-shirt
             </p>
             <p
-              class="CartProduct__Desc-sc-11uohgb-3 bRgwLG"
+              class="CartProduct__Desc-sc-11uohgb-3 gEKgsV"
             >
               X | Wine
                
@@ -103,7 +103,7 @@ Object {
             </p>
           </div>
           <div
-            class="CartProduct__Price-sc-11uohgb-4 NDRzT"
+            class="CartProduct__Price-sc-11uohgb-4 cFxNDU"
           >
             <p
               data-cy="product-price-39876704341265610"
@@ -112,14 +112,14 @@ Object {
             </p>
             <div>
               <button
-                class="CartProduct__ChangeQuantity-sc-11uohgb-6 JoGgi"
+                class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
                 data-cy="decrease-quantity-39876704341265610"
                 disabled=""
               >
                 -
               </button>
               <button
-                class="CartProduct__ChangeQuantity-sc-11uohgb-6 JoGgi"
+                class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
                 data-cy="increase-quantity-39876704341265610"
               >
                 +
@@ -128,31 +128,31 @@ Object {
           </div>
         </div>
         <div
-          class="CartProduct__Container-sc-11uohgb-0 iFEDVZ"
+          class="CartProduct__Container-sc-11uohgb-0 fJfmzi"
           data-cy="cart-product-container-9197907543445676"
         >
           <button
-            class="CartProduct__DeleteButton-sc-11uohgb-5 fZpMUH"
+            class="CartProduct__DeleteButton-sc-11uohgb-5 jEDzVU"
             data-cy="remove-product-9197907543445676"
             title="remove product from cart"
           />
           <img
             alt="Skater Black Sweatshirt"
-            class="CartProduct__Image-sc-11uohgb-7 dSflEM"
+            class="CartProduct__Image-sc-11uohgb-7 eUjxOT"
             data-cy="product-image-9197907543445676"
             src="9197907543445676-1-cart.webp"
           />
           <div
-            class="CartProduct__Details-sc-11uohgb-1 dWfwVY"
+            class="CartProduct__Details-sc-11uohgb-1 iolZxX"
             data-cy="product-details-9197907543445676"
           >
             <p
-              class="CartProduct__Title-sc-11uohgb-2 jVsMjn"
+              class="CartProduct__Title-sc-11uohgb-2 lkGRus"
             >
               Skater Black Sweatshirt
             </p>
             <p
-              class="CartProduct__Desc-sc-11uohgb-3 bRgwLG"
+              class="CartProduct__Desc-sc-11uohgb-3 gEKgsV"
             >
               XL | Tony Hawk
                
@@ -162,7 +162,7 @@ Object {
             </p>
           </div>
           <div
-            class="CartProduct__Price-sc-11uohgb-4 NDRzT"
+            class="CartProduct__Price-sc-11uohgb-4 cFxNDU"
           >
             <p
               data-cy="product-price-9197907543445676"
@@ -171,14 +171,14 @@ Object {
             </p>
             <div>
               <button
-                class="CartProduct__ChangeQuantity-sc-11uohgb-6 JoGgi"
+                class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
                 data-cy="decrease-quantity-9197907543445676"
                 disabled=""
               >
                 -
               </button>
               <button
-                class="CartProduct__ChangeQuantity-sc-11uohgb-6 JoGgi"
+                class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
                 data-cy="increase-quantity-9197907543445676"
               >
                 +
@@ -191,35 +191,35 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="CartProducts__Container-sc-7th5t8-0 hwjriB"
+      class="CartProducts__Container-sc-7th5t8-0 jqhzDe"
       data-cy="cart-products-container"
     >
       <div
-        class="CartProduct__Container-sc-11uohgb-0 iFEDVZ"
+        class="CartProduct__Container-sc-11uohgb-0 fJfmzi"
         data-cy="cart-product-container-8552515751438644"
       >
         <button
-          class="CartProduct__DeleteButton-sc-11uohgb-5 fZpMUH"
+          class="CartProduct__DeleteButton-sc-11uohgb-5 jEDzVU"
           data-cy="remove-product-8552515751438644"
           title="remove product from cart"
         />
         <img
           alt="Cropped Stay Groovy off white"
-          class="CartProduct__Image-sc-11uohgb-7 dSflEM"
+          class="CartProduct__Image-sc-11uohgb-7 eUjxOT"
           data-cy="product-image-8552515751438644"
           src="8552515751438644-1-cart.webp"
         />
         <div
-          class="CartProduct__Details-sc-11uohgb-1 dWfwVY"
+          class="CartProduct__Details-sc-11uohgb-1 iolZxX"
           data-cy="product-details-8552515751438644"
         >
           <p
-            class="CartProduct__Title-sc-11uohgb-2 jVsMjn"
+            class="CartProduct__Title-sc-11uohgb-2 lkGRus"
           >
             Cropped Stay Groovy off white
           </p>
           <p
-            class="CartProduct__Desc-sc-11uohgb-3 bRgwLG"
+            class="CartProduct__Desc-sc-11uohgb-3 gEKgsV"
           >
             S | White T-shirt
              
@@ -229,7 +229,7 @@ Object {
           </p>
         </div>
         <div
-          class="CartProduct__Price-sc-11uohgb-4 NDRzT"
+          class="CartProduct__Price-sc-11uohgb-4 cFxNDU"
         >
           <p
             data-cy="product-price-8552515751438644"
@@ -238,14 +238,14 @@ Object {
           </p>
           <div>
             <button
-              class="CartProduct__ChangeQuantity-sc-11uohgb-6 JoGgi"
+              class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
               data-cy="decrease-quantity-8552515751438644"
               disabled=""
             >
               -
             </button>
             <button
-              class="CartProduct__ChangeQuantity-sc-11uohgb-6 JoGgi"
+              class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
               data-cy="increase-quantity-8552515751438644"
             >
               +
@@ -254,31 +254,31 @@ Object {
         </div>
       </div>
       <div
-        class="CartProduct__Container-sc-11uohgb-0 iFEDVZ"
+        class="CartProduct__Container-sc-11uohgb-0 fJfmzi"
         data-cy="cart-product-container-39876704341265610"
       >
         <button
-          class="CartProduct__DeleteButton-sc-11uohgb-5 fZpMUH"
+          class="CartProduct__DeleteButton-sc-11uohgb-5 jEDzVU"
           data-cy="remove-product-39876704341265610"
           title="remove product from cart"
         />
         <img
           alt="Basic Cactus White T-shirt"
-          class="CartProduct__Image-sc-11uohgb-7 dSflEM"
+          class="CartProduct__Image-sc-11uohgb-7 eUjxOT"
           data-cy="product-image-39876704341265610"
           src="39876704341265610-1-cart.webp"
         />
         <div
-          class="CartProduct__Details-sc-11uohgb-1 dWfwVY"
+          class="CartProduct__Details-sc-11uohgb-1 iolZxX"
           data-cy="product-details-39876704341265610"
         >
           <p
-            class="CartProduct__Title-sc-11uohgb-2 jVsMjn"
+            class="CartProduct__Title-sc-11uohgb-2 lkGRus"
           >
             Basic Cactus White T-shirt
           </p>
           <p
-            class="CartProduct__Desc-sc-11uohgb-3 bRgwLG"
+            class="CartProduct__Desc-sc-11uohgb-3 gEKgsV"
           >
             X | Wine
              
@@ -288,7 +288,7 @@ Object {
           </p>
         </div>
         <div
-          class="CartProduct__Price-sc-11uohgb-4 NDRzT"
+          class="CartProduct__Price-sc-11uohgb-4 cFxNDU"
         >
           <p
             data-cy="product-price-39876704341265610"
@@ -297,14 +297,14 @@ Object {
           </p>
           <div>
             <button
-              class="CartProduct__ChangeQuantity-sc-11uohgb-6 JoGgi"
+              class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
               data-cy="decrease-quantity-39876704341265610"
               disabled=""
             >
               -
             </button>
             <button
-              class="CartProduct__ChangeQuantity-sc-11uohgb-6 JoGgi"
+              class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
               data-cy="increase-quantity-39876704341265610"
             >
               +
@@ -313,31 +313,31 @@ Object {
         </div>
       </div>
       <div
-        class="CartProduct__Container-sc-11uohgb-0 iFEDVZ"
+        class="CartProduct__Container-sc-11uohgb-0 fJfmzi"
         data-cy="cart-product-container-9197907543445676"
       >
         <button
-          class="CartProduct__DeleteButton-sc-11uohgb-5 fZpMUH"
+          class="CartProduct__DeleteButton-sc-11uohgb-5 jEDzVU"
           data-cy="remove-product-9197907543445676"
           title="remove product from cart"
         />
         <img
           alt="Skater Black Sweatshirt"
-          class="CartProduct__Image-sc-11uohgb-7 dSflEM"
+          class="CartProduct__Image-sc-11uohgb-7 eUjxOT"
           data-cy="product-image-9197907543445676"
           src="9197907543445676-1-cart.webp"
         />
         <div
-          class="CartProduct__Details-sc-11uohgb-1 dWfwVY"
+          class="CartProduct__Details-sc-11uohgb-1 iolZxX"
           data-cy="product-details-9197907543445676"
         >
           <p
-            class="CartProduct__Title-sc-11uohgb-2 jVsMjn"
+            class="CartProduct__Title-sc-11uohgb-2 lkGRus"
           >
             Skater Black Sweatshirt
           </p>
           <p
-            class="CartProduct__Desc-sc-11uohgb-3 bRgwLG"
+            class="CartProduct__Desc-sc-11uohgb-3 gEKgsV"
           >
             XL | Tony Hawk
              
@@ -347,7 +347,7 @@ Object {
           </p>
         </div>
         <div
-          class="CartProduct__Price-sc-11uohgb-4 NDRzT"
+          class="CartProduct__Price-sc-11uohgb-4 cFxNDU"
         >
           <p
             data-cy="product-price-9197907543445676"
@@ -356,14 +356,14 @@ Object {
           </p>
           <div>
             <button
-              class="CartProduct__ChangeQuantity-sc-11uohgb-6 JoGgi"
+              class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
               data-cy="decrease-quantity-9197907543445676"
               disabled=""
             >
               -
             </button>
             <button
-              class="CartProduct__ChangeQuantity-sc-11uohgb-6 JoGgi"
+              class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
               data-cy="increase-quantity-9197907543445676"
             >
               +
