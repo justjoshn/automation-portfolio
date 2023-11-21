@@ -31,7 +31,10 @@
     "eject": "react-scripts eject",
     "lint": "eslint ./src",
     "format": "prettier --write \"**/*.+(ts|tsx|js|json|css)\"",
-    "test:playwright": "playwright test --project=chromium"
+    "cypress:run": "cypress run --browser chrome",
+    "cypress:open": "cypress open",
+    "playwright:open": "playwright test --ui",
+    "playwright:run": "playwright test --project=chromium"
   },
   "jest": {
     "collectCoverageFrom": [

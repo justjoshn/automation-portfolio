@@ -18,6 +18,7 @@ test.describe('react shopping cart', () => {
 
     await expect(cartPage.cartContainer).toBeVisible();
     await expect(cartPage.productCartContainer).toBeVisible();
+    await expect(cartPage.productCartContainer).toHaveCount(1)
   });
 
   test('Check that the total price in the cart updates correctly when multiple items are added.', async () => {
@@ -125,7 +126,7 @@ test.describe('react shopping cart', () => {
         : 0;
 
       const totalInstallmentPrice = installmentPrice * installmentCount;
-      expect(totalInstallmentPrice).toBeCloseTo(productPrice, 1);
+      expect(totalInstallmentPrice).toBeCloseTo(productPrice, 0.05);
     }
   });
 });

@@ -122,4 +122,36 @@ describe('react shopping cart', () => {
       });
     });
   });
+
+  it('Check if the product page correctly displays installment information when available.', () => {
+    productsPage.clickOnFilterButton('L')
+
+    productsPage.productContainers().its('length').then((productContainersLength) => {
+      for (let i = 0; i < productContainersLength; i++) {
+        productsPage.productPrices().eq(i).invoke('text').then((productPriceText) => {
+          const productPrice = parseFloat(productPriceText.replace('$', ''));
+
+          productsPage.productInstallmentCounts().eq(i).invoke('text').then((productInstallmentCountText) => {
+            const installmentCountMatches = productInstallmentCountText.match(/\d+/);
+
+            const installmentCount = installmentCountMatches
+            ? parseInt(installmentCountMatches[0], 10)
+            : 0;
+
+            productsPage.productInstallmentPrices().eq(i).invoke('text').then((productInstallmentPriceText) => {
+              const installmentPriceMatches =
+              productInstallmentPriceText.match(/\$?(\d+(\.\d{2})?)/);
+      
+              const installmentPrice = installmentPriceMatches
+                ? parseFloat(installmentPriceMatches[1])
+                : 0;
+        
+              const totalInstallmentPrice = installmentPrice * installmentCount;
+              expect(totalInstallmentPrice).closeTo(productPrice, 0.05);
+            })
+          })
+        })
+      }
+    })
+  });
 });
