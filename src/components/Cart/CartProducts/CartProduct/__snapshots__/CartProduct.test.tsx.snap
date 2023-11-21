@@ -11,18 +11,18 @@ Object {
       >
         <button
           class="CartProduct__DeleteButton-sc-11uohgb-5 jEDzVU"
-          data-cy="remove-product-8552515751438644"
+          data-cy="cart-remove-product-8552515751438644"
           title="remove product from cart"
         />
         <img
           alt="Cropped Stay Groovy off white"
           class="CartProduct__Image-sc-11uohgb-7 eUjxOT"
-          data-cy="product-image-8552515751438644"
+          data-cy="cart-product-image-8552515751438644"
           src="8552515751438644-1-cart.webp"
         />
         <div
           class="CartProduct__Details-sc-11uohgb-1 iolZxX"
-          data-cy="product-details-8552515751438644"
+          data-cy="cart-product-details-8552515751438644"
         >
           <p
             class="CartProduct__Title-sc-11uohgb-2 lkGRus"
@@ -43,21 +43,21 @@ Object {
           class="CartProduct__Price-sc-11uohgb-4 cFxNDU"
         >
           <p
-            data-cy="product-price-8552515751438644"
+            data-cy="cart-product-price-8552515751438644"
           >
             $  10.90
           </p>
           <div>
             <button
               class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
-              data-cy="decrease-quantity-8552515751438644"
+              data-cy="cart-decrease-quantity-8552515751438644"
               disabled=""
             >
               -
             </button>
             <button
               class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
-              data-cy="increase-quantity-8552515751438644"
+              data-cy="cart-increase-quantity-8552515751438644"
             >
               +
             </button>
@@ -73,18 +73,18 @@ Object {
     >
       <button
         class="CartProduct__DeleteButton-sc-11uohgb-5 jEDzVU"
-        data-cy="remove-product-8552515751438644"
+        data-cy="cart-remove-product-8552515751438644"
         title="remove product from cart"
       />
       <img
         alt="Cropped Stay Groovy off white"
         class="CartProduct__Image-sc-11uohgb-7 eUjxOT"
-        data-cy="product-image-8552515751438644"
+        data-cy="cart-product-image-8552515751438644"
         src="8552515751438644-1-cart.webp"
       />
       <div
         class="CartProduct__Details-sc-11uohgb-1 iolZxX"
-        data-cy="product-details-8552515751438644"
+        data-cy="cart-product-details-8552515751438644"
       >
         <p
           class="CartProduct__Title-sc-11uohgb-2 lkGRus"
@@ -105,21 +105,21 @@ Object {
         class="CartProduct__Price-sc-11uohgb-4 cFxNDU"
       >
         <p
-          data-cy="product-price-8552515751438644"
+          data-cy="cart-product-price-8552515751438644"
         >
           $  10.90
         </p>
         <div>
           <button
             class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
-            data-cy="decrease-quantity-8552515751438644"
+            data-cy="cart-decrease-quantity-8552515751438644"
             disabled=""
           >
             -
           </button>
           <button
             class="CartProduct__ChangeQuantity-sc-11uohgb-6 kRzmCd"
-            data-cy="increase-quantity-8552515751438644"
+            data-cy="cart-increase-quantity-8552515751438644"
           >
             +
           </button>

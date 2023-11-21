@@ -1,5 +1,4 @@
 import { useProducts } from 'contexts/products-context';
-
 import * as S from './style';
 
 export const availableSizes = ['XS', 'S', 'M', 'ML', 'L', 'XL', 'XXL'];
@@ -16,16 +15,14 @@ const Filter = () => {
       selectedCheckboxes.add(label);
     }
 
-    const filters = Array.from(selectedCheckboxes) as [];
-
-    filterProducts(filters);
+    const newFilters = Array.from(selectedCheckboxes);
+    filterProducts(newFilters);
   };
 
   const createCheckbox = (label: string) => (
-    // Assuming S.Checkbox is a styled component and can spread props to the underlying element
     <S.Checkbox
       label={label}
-      handleOnChange={toggleCheckbox}
+      handleOnChange={() => toggleCheckbox(label)}
       key={label}
       data-cy={`filter-checkbox-${label}`}
     />

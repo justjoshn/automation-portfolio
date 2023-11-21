@@ -32,14 +32,14 @@ const CartProduct = ({ product }: IProps) => {
       <S.DeleteButton
         onClick={handleRemoveProduct}
         title="remove product from cart"
-        data-cy={`remove-product-${sku}`}
+        data-cy={`cart-remove-product-${sku}`}
       />
       <S.Image
         src={require(`static/products/${sku}-1-cart.webp`)}
         alt={title}
-        data-cy={`product-image-${sku}`}
+        data-cy={`cart-product-image-${sku}`}
       />
-      <S.Details data-cy={`product-details-${sku}`}>
+      <S.Details data-cy={`cart-product-details-${sku}`}>
         <S.Title>{title}</S.Title>
         <S.Desc>
           {`${availableSizes[0]} | ${style}`} <br />
@@ -47,21 +47,20 @@ const CartProduct = ({ product }: IProps) => {
         </S.Desc>
       </S.Details>
       <S.Price>
-        <p data-cy={`product-price-${sku}`}>{`${currencyFormat}  ${formatPrice(
-          price,
-          currencyId
-        )}`}</p>
+        <p
+          data-cy={`cart-product-price-${sku}`}
+        >{`${currencyFormat}  ${formatPrice(price, currencyId)}`}</p>
         <div>
           <S.ChangeQuantity
             onClick={handleDecreaseProductQuantity}
             disabled={quantity === 1}
-            data-cy={`decrease-quantity-${sku}`}
+            data-cy={`cart-decrease-quantity-${sku}`}
           >
             -
           </S.ChangeQuantity>
           <S.ChangeQuantity
             onClick={handleIncreaseProductQuantity}
-            data-cy={`increase-quantity-${sku}`}
+            data-cy={`cart-increase-quantity-${sku}`}
           >
             +
           </S.ChangeQuantity>

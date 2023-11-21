@@ -17,15 +17,19 @@ export class CartPage {
       '[data-cy^="cart-product-container-"]'
     );
 
-    this.cartProductPriceText = page.locator('[data-cy^="product-price-"]');
-
-    this.cartTotalPriceText = page.getByTestId('subtotal-value');
-
-    this.increaseQuantityButton = page.locator(
-      '[data-cy^="increase-quantity-"]'
+    this.cartProductPriceText = page.locator(
+      '[data-cy^="cart-product-price-"]'
     );
 
-    this.removeProductButton = page.locator('[data-cy^="remove-product-"]');
+    this.cartTotalPriceText = page.getByTestId('cart-subtotal-value');
+
+    this.increaseQuantityButton = page.locator(
+      '[data-cy^="cart-increase-quantity-"]'
+    );
+
+    this.removeProductButton = page.locator(
+      '[data-cy^="cart-remove-product-"]'
+    );
   }
 
   async clickOnIncreaseQuantityButton(productIndex: number) {

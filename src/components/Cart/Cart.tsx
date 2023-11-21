@@ -58,17 +58,17 @@ const Cart = () => {
           <CartProducts products={products} data-cy="cart-products" />
 
           <S.CartFooter data-cy="cart-footer">
-            <S.Sub data-cy="subtotal-label">SUBTOTAL</S.Sub>
-            <S.SubPrice data-cy="subtotal-price">
-              <S.SubPriceValue data-cy="subtotal-value">{`${
+            <S.Sub data-cy="cart-subtotal-label">SUBTOTAL</S.Sub>
+            <S.SubPrice data-cy="cart-subtotal-price">
+              <S.SubPriceValue data-cy="cart-subtotal-value">{`${
                 total.currencyFormat
               } ${formatPrice(
                 total.totalPrice,
                 total.currencyId
               )}`}</S.SubPriceValue>
-              <S.SubPriceInstallment data-cy="subtotal-installment">
+              <S.SubPriceInstallment data-cy="cart-subtotal-installment">
                 {total.installments ? (
-                  <span data-cy="installment-value">
+                  <span data-cy="cart-installment-value">
                     {`OR UP TO ${total.installments} x ${
                       total.currencyFormat
                     } ${formatPrice(
@@ -82,7 +82,7 @@ const Cart = () => {
             <S.CheckoutButton
               onClick={handleCheckout}
               autoFocus
-              data-cy="checkout-button"
+              data-cy="cart-checkout-button"
             >
               Checkout
             </S.CheckoutButton>

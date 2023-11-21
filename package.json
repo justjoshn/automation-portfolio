@@ -30,7 +30,8 @@
     "deploy": "firebase deploy",
     "eject": "react-scripts eject",
     "lint": "eslint ./src",
-    "format": "prettier --write \"**/*.+(ts|tsx|js|json|css)\""
+    "format": "prettier --write \"**/*.+(ts|tsx|js|json|css)\"",
+    "test:playwright": "playwright test --project=chromium"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -79,7 +80,7 @@
   "devDependencies": {
     "@commitlint/cli": "^16.2.1",
     "@commitlint/config-conventional": "^16.2.1",
-    "@playwright/test": "^1.39.0",
+    "@playwright/test": "^1.40.0",
     "@testing-library/react-hooks": "^7.0.2",
     "@types/react-dom": "^18.2.16",
     "@types/styled-components": "^5.1.23",
