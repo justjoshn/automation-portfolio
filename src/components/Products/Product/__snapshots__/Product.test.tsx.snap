@@ -46,6 +46,7 @@ Object {
           </p>
           <p
             class="Product__Installment-sc-124al1g-7 hBZpTG"
+            data-cy="product-installment-8552515751438644"
           >
             <span>
               or 
@@ -110,6 +111,7 @@ Object {
         </p>
         <p
           class="Product__Installment-sc-124al1g-7 hBZpTG"
+          data-cy="product-installment-8552515751438644"
         >
           <span>
             or 

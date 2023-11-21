@@ -30,7 +30,7 @@ const Product = ({ product }: IProps) => {
     const installmentPrice = price / installments;
 
     productInstallment = (
-      <S.Installment>
+      <S.Installment data-cy={`product-installment-${sku}`}>
         <span>or {installments} x</span>
         <b>
           {currencyFormat}
@@ -56,7 +56,7 @@ const Product = ({ product }: IProps) => {
     <S.Container
       onKeyUp={handleAddProductWhenEnter}
       tabIndex={1}
-      data-cy={`product-container-${sku}`} // Added data-cy attribute for the product container
+      data-cy={`product-container-${sku}`}
       sku={sku}
     >
       {isFreeShipping && (
@@ -75,7 +75,7 @@ const Product = ({ product }: IProps) => {
       <S.BuyButton
         onClick={handleAddProduct}
         tabIndex={-1}
-        data-cy={`add-to-cart-${sku}`} // Added data-cy attribute for the add to cart button
+        data-cy={`add-to-cart-${sku}`}
       >
         Add to cart
       </S.BuyButton>

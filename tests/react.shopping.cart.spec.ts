@@ -13,14 +13,14 @@ test.describe('react shopping cart', () => {
 
   test.beforeEach(async ({ page }) => {
     productsPage = new ProductsPage(page);
-    cartPage = new CartPage(page)
+    cartPage = new CartPage(page);
   });
 
   test('Verify that when a user adds a product to the shopping cart, it actually appears in the cart.', async () => {
     await productsPage.clickOnProductAddToCartButton(0);
 
     await expect(cartPage.cartContainer).toBeVisible();
-    await expect(cartPage.productCartContainer.nth(0)).toBeVisible();
+    await expect(cartPage.productCartContainer).toBeVisible();
   });
 
   test('Check that the total price in the cart updates correctly when multiple items are added.', async () => {
@@ -40,8 +40,7 @@ test.describe('react shopping cart', () => {
 
     const sumOfProductsInCart = firstCartProductPrice + secondCartProductPrice;
 
-    const totalCartPriceText =
-      await cartPage.cartTotalPriceText.textContent();
+    const totalCartPriceText = await cartPage.cartTotalPriceText.textContent();
 
     const totalPrice = parsePrice(totalCartPriceText || '');
 
@@ -58,8 +57,7 @@ test.describe('react shopping cart', () => {
 
     const firstCartProductPrice = parsePrice(firstCartProductPriceText || '');
 
-    const totalCartPriceText =
-      await cartPage.cartTotalPriceText.textContent();
+    const totalCartPriceText = await cartPage.cartTotalPriceText.textContent();
 
     const totalPrice = parsePrice(totalCartPriceText || '');
 
@@ -70,88 +68,89 @@ test.describe('react shopping cart', () => {
     await productsPage.clickOnProductAddToCartButton(0);
     await cartPage.clickOnRemoveProductButton(0);
 
-    await expect(cartPage.productCartContainer).not.toBeVisible()
+    await expect(cartPage.productCartContainer).not.toBeVisible();
 
-    const totalCartPriceText =
-      await cartPage.cartTotalPriceText.textContent();
+    const totalCartPriceText = await cartPage.cartTotalPriceText.textContent();
 
     const totalPrice = parsePrice(totalCartPriceText || '');
-    
-    expect(totalPrice).toBe(0)
+
+    expect(totalPrice).toBe(0);
   });
 
-  test.only('Verify that filtering products by size only shows products available in the selected size.', async () => {
-    const textCountBefore = await productsPage.getProductCount()
-    const displayCountBefore = await productsPage.getActualProductCount()
+  test('Verify that filtering products by size only shows products available in the selected size.', async () => {
+    const textCountBefore = await productsPage.getProductCount();
+    const displayCountBefore = await productsPage.getActualProductCount();
 
-    await productsPage.applyFilterByLabel('XS')
+    await productsPage.applyFilterByLabel('XS');
 
-    let textCountAfter = await productsPage.getProductCount()
-    let displayCountAfter = await productsPage.getActualProductCount()
+    let textCountAfter = await productsPage.getProductCount();
+    let displayCountAfter = await productsPage.getActualProductCount();
 
-    expect(textCountBefore).not.toBe(textCountAfter)
-    expect(displayCountBefore).not.toBe(displayCountAfter)
+    expect(textCountBefore).not.toBe(textCountAfter);
+    expect(displayCountBefore).not.toBe(displayCountAfter);
 
-    await productsPage.applyFilterByLabel('XS')
-    await productsPage.applyFilterByLabel('S')
+    await productsPage.applyFilterByLabel('XS');
+    await productsPage.applyFilterByLabel('S');
 
-    textCountAfter = await productsPage.getProductCount()
-    displayCountAfter = await productsPage.getActualProductCount()
+    textCountAfter = await productsPage.getProductCount();
+    displayCountAfter = await productsPage.getActualProductCount();
 
-    expect(textCountBefore).not.toBe(textCountAfter)
-    expect(displayCountBefore).not.toBe(displayCountAfter)
+    expect(textCountBefore).not.toBe(textCountAfter);
+    expect(displayCountBefore).not.toBe(displayCountAfter);
 
-    await productsPage.applyFilterByLabel('S')
-    await productsPage.applyFilterByLabel('M')
+    await productsPage.applyFilterByLabel('S');
+    await productsPage.applyFilterByLabel('M');
 
-    textCountAfter = await productsPage.getProductCount()
-    displayCountAfter = await productsPage.getActualProductCount()
+    textCountAfter = await productsPage.getProductCount();
+    displayCountAfter = await productsPage.getActualProductCount();
 
-    expect(textCountBefore).not.toBe(textCountAfter)
-    expect(displayCountBefore).not.toBe(displayCountAfter)
+    expect(textCountBefore).not.toBe(textCountAfter);
+    expect(displayCountBefore).not.toBe(displayCountAfter);
 
-    await productsPage.applyFilterByLabel('M')
-    await productsPage.applyFilterByLabel('ML')
+    await productsPage.applyFilterByLabel('M');
+    await productsPage.applyFilterByLabel('ML');
 
-    textCountAfter = await productsPage.getProductCount()
-    displayCountAfter = await productsPage.getActualProductCount()
+    textCountAfter = await productsPage.getProductCount();
+    displayCountAfter = await productsPage.getActualProductCount();
 
-    expect(textCountBefore).not.toBe(textCountAfter)
-    expect(displayCountBefore).not.toBe(displayCountAfter)
+    expect(textCountBefore).not.toBe(textCountAfter);
+    expect(displayCountBefore).not.toBe(displayCountAfter);
 
-    await productsPage.applyFilterByLabel('ML')
-    await productsPage.applyFilterByLabel('L')
+    await productsPage.applyFilterByLabel('ML');
+    await productsPage.applyFilterByLabel('L');
 
-    textCountAfter = await productsPage.getProductCount()
-    displayCountAfter = await productsPage.getActualProductCount()
+    textCountAfter = await productsPage.getProductCount();
+    displayCountAfter = await productsPage.getActualProductCount();
 
-    expect(textCountBefore).not.toBe(textCountAfter)
-    expect(displayCountBefore).not.toBe(displayCountAfter)
+    expect(textCountBefore).not.toBe(textCountAfter);
+    expect(displayCountBefore).not.toBe(displayCountAfter);
 
-    await productsPage.applyFilterByLabel('L')
-    await productsPage.applyFilterByLabel('XL')
+    await productsPage.applyFilterByLabel('L');
+    await productsPage.applyFilterByLabel('XL');
 
-    textCountAfter = await productsPage.getProductCount()
-    displayCountAfter = await productsPage.getActualProductCount()
+    textCountAfter = await productsPage.getProductCount();
+    displayCountAfter = await productsPage.getActualProductCount();
 
-    expect(textCountBefore).not.toBe(textCountAfter)
-    expect(displayCountBefore).not.toBe(displayCountAfter)
+    expect(textCountBefore).not.toBe(textCountAfter);
+    expect(displayCountBefore).not.toBe(displayCountAfter);
 
-    await productsPage.applyFilterByLabel('XL')
-    await productsPage.applyFilterByLabel('XXL')
+    await productsPage.applyFilterByLabel('XL');
+    await productsPage.applyFilterByLabel('XXL');
 
-    textCountAfter = await productsPage.getProductCount()
-    displayCountAfter = await productsPage.getActualProductCount()
+    textCountAfter = await productsPage.getProductCount();
+    displayCountAfter = await productsPage.getActualProductCount();
 
-    expect(textCountBefore).not.toBe(textCountAfter)
-    expect(displayCountBefore).not.toBe(displayCountAfter)
+    expect(textCountBefore).not.toBe(textCountAfter);
+    expect(displayCountBefore).not.toBe(displayCountAfter);
 
-    await productsPage.applyFilterByLabel('XXL')
-    
-    textCountAfter = await productsPage.getProductCount()
-    displayCountAfter = await productsPage.getActualProductCount()
+    await productsPage.applyFilterByLabel('XXL');
 
-    expect(textCountBefore).toBe(textCountAfter)
-    expect(displayCountBefore).toBe(displayCountAfter)
+    textCountAfter = await productsPage.getProductCount();
+    displayCountAfter = await productsPage.getActualProductCount();
+
+    expect(textCountBefore).toBe(textCountAfter);
+    expect(displayCountBefore).toBe(displayCountAfter);
   });
+
+  test('Check if the product page correctly displays installment information when available.', async () => {});
 });

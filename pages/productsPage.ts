@@ -10,7 +10,7 @@ export class ProductsPage {
     this.page = page;
     this.productAddToCartButton = page.locator('[data-cy^="add-to-cart-"]');
     this.productCount = page.getByTestId('product-count');
-    this.productContainer = page.locator('[data-cy^="product-container-"]')
+    this.productContainer = page.locator('[data-cy^="product-container-"]');
   }
 
   async clickOnProductAddToCartButton(productIndex: number) {
@@ -23,7 +23,7 @@ export class ProductsPage {
       throw new Error('Unable to find product count text.');
     }
     const match = text.match(/\d+/);
-    
+
     if (match !== null) {
       return parseInt(match[0], 10);
     } else {
@@ -33,11 +33,9 @@ export class ProductsPage {
 
   async applyFilterByLabel(labelText: string) {
     const label = this.page.locator(`label:has(span:text-is("${labelText}"))`);
-  
+
     await label.click();
   }
-  
-  
 
   async getActualProductCount() {
     return this.productContainer.count();
