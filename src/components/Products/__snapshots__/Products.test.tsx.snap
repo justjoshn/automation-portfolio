@@ -33,10 +33,10 @@ Object {
           </p>
           <div
             class="Product__Price-sc-124al1g-5 iZlLwH"
-            data-cy="product-price-8552515751438644"
           >
             <p
               class="Product__Val-sc-124al1g-6 eKyHNu"
+              data-cy="product-price-value-8552515751438644"
             >
               <small>
                 $
@@ -52,15 +52,21 @@ Object {
               class="Product__Installment-sc-124al1g-7 hBZpTG"
               data-cy="product-installment-8552515751438644"
             >
-              <span>
+              <span
+                data-cy="installment-count-8552515751438644"
+              >
                 or 
                 9
                  x
               </span>
-              <b>
+               
+              <b
+                data-cy="installment-price-8552515751438644"
+              >
                 $
                 1.21
               </b>
+               
             </p>
           </div>
           <button
@@ -95,10 +101,10 @@ Object {
           </p>
           <div
             class="Product__Price-sc-124al1g-5 iZlLwH"
-            data-cy="product-price-39876704341265610"
           >
             <p
               class="Product__Val-sc-124al1g-6 eKyHNu"
+              data-cy="product-price-value-39876704341265610"
             >
               <small>
                 $
@@ -114,15 +120,21 @@ Object {
               class="Product__Installment-sc-124al1g-7 hBZpTG"
               data-cy="product-installment-39876704341265610"
             >
-              <span>
+              <span
+                data-cy="installment-count-39876704341265610"
+              >
                 or 
                 3
                  x
               </span>
-              <b>
+               
+              <b
+                data-cy="installment-price-39876704341265610"
+              >
                 $
                 4.42
               </b>
+               
             </p>
           </div>
           <button
@@ -151,10 +163,10 @@ Object {
           </p>
           <div
             class="Product__Price-sc-124al1g-5 iZlLwH"
-            data-cy="product-price-9197907543445676"
           >
             <p
               class="Product__Val-sc-124al1g-6 eKyHNu"
+              data-cy="product-price-value-9197907543445676"
             >
               <small>
                 $
@@ -170,15 +182,21 @@ Object {
               class="Product__Installment-sc-124al1g-7 hBZpTG"
               data-cy="product-installment-9197907543445676"
             >
-              <span>
+              <span
+                data-cy="installment-count-9197907543445676"
+              >
                 or 
                 12
                  x
               </span>
-              <b>
+               
+              <b
+                data-cy="installment-price-9197907543445676"
+              >
                 $
                 2.16
               </b>
+               
             </p>
           </div>
           <button
@@ -221,10 +239,10 @@ Object {
         </p>
         <div
           class="Product__Price-sc-124al1g-5 iZlLwH"
-          data-cy="product-price-8552515751438644"
         >
           <p
             class="Product__Val-sc-124al1g-6 eKyHNu"
+            data-cy="product-price-value-8552515751438644"
           >
             <small>
               $
@@ -240,15 +258,21 @@ Object {
             class="Product__Installment-sc-124al1g-7 hBZpTG"
             data-cy="product-installment-8552515751438644"
           >
-            <span>
+            <span
+              data-cy="installment-count-8552515751438644"
+            >
               or 
               9
                x
             </span>
-            <b>
+             
+            <b
+              data-cy="installment-price-8552515751438644"
+            >
               $
               1.21
             </b>
+             
           </p>
         </div>
         <button
@@ -283,10 +307,10 @@ Object {
         </p>
         <div
           class="Product__Price-sc-124al1g-5 iZlLwH"
-          data-cy="product-price-39876704341265610"
         >
           <p
             class="Product__Val-sc-124al1g-6 eKyHNu"
+            data-cy="product-price-value-39876704341265610"
           >
             <small>
               $
@@ -302,15 +326,21 @@ Object {
             class="Product__Installment-sc-124al1g-7 hBZpTG"
             data-cy="product-installment-39876704341265610"
           >
-            <span>
+            <span
+              data-cy="installment-count-39876704341265610"
+            >
               or 
               3
                x
             </span>
-            <b>
+             
+            <b
+              data-cy="installment-price-39876704341265610"
+            >
               $
               4.42
             </b>
+             
           </p>
         </div>
         <button
@@ -339,10 +369,10 @@ Object {
         </p>
         <div
           class="Product__Price-sc-124al1g-5 iZlLwH"
-          data-cy="product-price-9197907543445676"
         >
           <p
             class="Product__Val-sc-124al1g-6 eKyHNu"
+            data-cy="product-price-value-9197907543445676"
           >
             <small>
               $
@@ -358,15 +388,21 @@ Object {
             class="Product__Installment-sc-124al1g-7 hBZpTG"
             data-cy="product-installment-9197907543445676"
           >
-            <span>
+            <span
+              data-cy="installment-count-9197907543445676"
+            >
               or 
               12
                x
             </span>
-            <b>
+             
+            <b
+              data-cy="installment-price-9197907543445676"
+            >
               $
               2.16
             </b>
+             
           </p>
         </div>
         <button

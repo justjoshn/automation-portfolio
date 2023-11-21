@@ -3,10 +3,6 @@ import { ProductsPage } from '../pages/productsPage';
 import { CartPage } from '../pages/cartPage';
 import { parsePrice } from '../support/utils';
 
-test.beforeEach(async ({ page }) => {
-  await page.goto('/');
-});
-
 test.describe('react shopping cart', () => {
   let productsPage: ProductsPage;
   let cartPage: CartPage;
@@ -14,6 +10,7 @@ test.describe('react shopping cart', () => {
   test.beforeEach(async ({ page }) => {
     productsPage = new ProductsPage(page);
     cartPage = new CartPage(page);
+    await page.goto('/');
   });
 
   test('Verify that when a user adds a product to the shopping cart, it actually appears in the cart.', async () => {
@@ -152,5 +149,39 @@ test.describe('react shopping cart', () => {
     expect(displayCountBefore).toBe(displayCountAfter);
   });
 
-  test('Check if the product page correctly displays installment information when available.', async () => {});
+  test('Check if the product page correctly displays installment information when available.', async () => {
+    await productsPage.applyFilterByLabel('L');
+    const productCount = await productsPage.getProductCount();
+
+    for (let i = 0; i < productCount; i++) {
+      const productPriceText =
+        (await productsPage.productPrices.nth(i).textContent()) ?? '';
+
+      const productPrice = parseFloat(productPriceText.replace('$', ''));
+
+      const installmentCountText =
+        (await productsPage.productInstallmentCounts.nth(i).textContent()) ??
+        '';
+
+      const installmentCountMatches = installmentCountText.match(/\d+/);
+
+      const installmentCount = installmentCountMatches
+        ? parseInt(installmentCountMatches[0], 10)
+        : 0;
+
+      const installmentPriceText =
+        (await productsPage.productInstallmentPrices.nth(i).textContent()) ??
+        '';
+
+      const installmentPriceMatches =
+        installmentPriceText.match(/\$?(\d+(\.\d{2})?)/);
+
+      const installmentPrice = installmentPriceMatches
+        ? parseFloat(installmentPriceMatches[1])
+        : 0;
+
+      const totalInstallmentPrice = installmentPrice * installmentCount;
+      expect(totalInstallmentPrice).toBeCloseTo(productPrice, 1);
+    }
+  });
 });

@@ -31,11 +31,11 @@ const Product = ({ product }: IProps) => {
 
     productInstallment = (
       <S.Installment data-cy={`product-installment-${sku}`}>
-        <span>or {installments} x</span>
-        <b>
+        <span data-cy={`installment-count-${sku}`}>or {installments} x</span>{' '}
+        <b data-cy={`installment-price-${sku}`}>
           {currencyFormat}
           {formatPrice(installmentPrice, currencyId)}
-        </b>
+        </b>{' '}
       </S.Installment>
     );
   }
@@ -64,8 +64,8 @@ const Product = ({ product }: IProps) => {
       )}
       <S.Image alt={title} data-cy={`product-image-${sku}`} />
       <S.Title data-cy={`product-title-${sku}`}>{title}</S.Title>
-      <S.Price data-cy={`product-price-${sku}`}>
-        <S.Val>
+      <S.Price>
+        <S.Val data-cy={`product-price-value-${sku}`}>
           <small>{currencyFormat}</small>
           <b>{formattedPrice.substring(0, formattedPrice.length - 3)}</b>
           <span>{formattedPrice.substring(formattedPrice.length - 3)}</span>
