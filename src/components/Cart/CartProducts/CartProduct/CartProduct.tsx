@@ -46,8 +46,11 @@ const CartProduct = ({ product }: IProps) => {
           Quantity: {quantity}
         </S.Desc>
       </S.Details>
-      <S.Price data-cy={`product-price-${sku}`}>
-        <p>{`${currencyFormat}  ${formatPrice(price, currencyId)}`}</p>
+      <S.Price>
+        <p data-cy={`product-price-${sku}`}>{`${currencyFormat}  ${formatPrice(
+          price,
+          currencyId
+        )}`}</p>
         <div>
           <S.ChangeQuantity
             onClick={handleDecreaseProductQuantity}

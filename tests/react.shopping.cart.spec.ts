@@ -151,6 +151,7 @@ test.describe('react shopping cart', () => {
 
   test('Check if the product page correctly displays installment information when available.', async () => {
     await productsPage.applyFilterByLabel('L');
+
     const productCount = await productsPage.getProductCount();
 
     for (let i = 0; i < productCount; i++) {

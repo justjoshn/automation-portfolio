@@ -17,9 +17,7 @@ export class CartPage {
       '[data-cy^="cart-product-container-"]'
     );
 
-    this.cartProductPriceText = page.locator(
-      '[data-cy="cart-content"] >> [data-cy^="product-price-"] >> p'
-    );
+    this.cartProductPriceText = page.locator('[data-cy^="product-price-"]');
 
     this.cartTotalPriceText = page.getByTestId('subtotal-value');
 

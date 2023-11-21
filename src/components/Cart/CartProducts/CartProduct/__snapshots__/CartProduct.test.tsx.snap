@@ -41,9 +41,10 @@ Object {
         </div>
         <div
           class="CartProduct__Price-sc-11uohgb-4 NDRzT"
-          data-cy="product-price-8552515751438644"
         >
-          <p>
+          <p
+            data-cy="product-price-8552515751438644"
+          >
             $  10.90
           </p>
           <div>
@@ -102,9 +103,10 @@ Object {
       </div>
       <div
         class="CartProduct__Price-sc-11uohgb-4 NDRzT"
-        data-cy="product-price-8552515751438644"
       >
-        <p>
+        <p
+          data-cy="product-price-8552515751438644"
+        >
           $  10.90
         </p>
         <div>
