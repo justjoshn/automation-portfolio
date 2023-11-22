@@ -1,63 +1,69 @@
-## 🛍️ Simple ecommerce cart application [![CircleCI](https://circleci.com/gh/jeffersonRibeiro/react-shopping-cart.svg?style=svg)](https://circleci.com/gh/jeffersonRibeiro/react-shopping-cart)
+# React Shopping Cart with Cypress and Playwright Automation
 
-<p align="center">
+## Overview
 
-  <img src="./readme-banner.png">
-</p>
+This repository showcases my expertise in web application automation testing, focusing on a React-based shopping cart application. Initially cloned from an existing project, I've enhanced the application by adding `data-cy` attributes to facilitate testing and implementing comprehensive test suites using both Cypress and Playwright frameworks with TypeScript.
 
-## Basic Overview - [Live Demo](https://react-shopping-cart-67954.firebaseapp.com/)
+### Key Features
 
-<p align="left">
+- **Enhanced React Application**: Added `data-cy` attributes to improve testability.
+- **Cypress Automation**: Extensive Cypress test cases using TypeScript and Page Object Model.
+- **Playwright Automation**: Comprehensive Playwright test suite, also utilizing TypeScript and Page Object Model.
 
-  <img src="./work-in-the-netherlands.png" width="380" height="90">
-</p>
+### Original Application Credit
 
-✈️ [Follow Jeremy Akeze](https://www.linkedin.com/in/jeremy-akeze-9542b396/)
+This project is built upon the React Shopping Cart application originally created by [Jefferson Ribeiro](https://github.com/jeffersonRibeiro). The original repository can be found here: [jeffersonRibeiro/react-shopping-cart](https://github.com/jeffersonRibeiro/react-shopping-cart). I would like to express my gratitude to Jefferson Ribeiro for developing the initial application, which served as a foundation for my automation work.
 
-This simple shopping cart prototype shows how React with Typescript, React hooks, react Context and Styled Components can be used to build a friendly user experience with instant visual updates and scaleable code in ecommerce applications.
+## Getting Started
 
-#### Features
-
-- Add and remove products from the floating cart using Context Api
-- Filter products by available sizes using Context Api
-- Responsive design
-
-<!--
-## Getting started
-
-Try playing with the code on CodeSandbox :)
-
-[![Edit app](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/74rykw70qq)
- -->
-
-## Build/Run
-
-#### Requirements
+### Prerequisites
 
 - Node.js
 - NPM
 
-```javascript
+### Installation
 
-/* First, Install the needed packages */
-npm install
+1. Clone the repository:
+   ```bash
+   git clone [repository-url]
+   ```
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the React application:
+   ```bash
+   npm start
+   ```
 
-/* Then start the React app */
-npm start
+## Running the Tests
 
-/* To run the tests */
-npm run test
+### Cypress Tests
 
-```
+Run Cypress tests using the following commands:
+
+- To open Cypress Test Runner:
+  ```bash
+  npm run cypress:open
+  ```
+- To run Cypress tests headlessly:
+  ```bash
+  npm run cypress:run
+  ```
+
+### Playwright Tests
+
+Execute Playwright tests using:
+
+- To open Playwright Test Runner:
+  ```bash
+  npm run playwright:open
+  ```
+- To run Playwright tests on Chromium:
+  ```bash
+  npm run playwright:run
+  ```
 
 ### Copyright and license
 
 The MIT License (MIT). Please see License File for more information.
-
-<br/>
-<br/>
-
-<p align="center"><img src="http://www.jeffersonribeiro.com/assets/img/apple-icon-180x180.png" width="35" height="35"/></p>
-<p align="center">
-<sub>A little project by <a href="http://www.jeffersonribeiro.com/">Jefferson Ribeiro</a></sub>
-</p>
