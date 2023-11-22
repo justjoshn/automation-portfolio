@@ -18,7 +18,7 @@ test.describe('react shopping cart', () => {
 
     await expect(cartPage.cartContainer).toBeVisible();
     await expect(cartPage.productCartContainer).toBeVisible();
-    await expect(cartPage.productCartContainer).toHaveCount(1)
+    await expect(cartPage.productCartContainer).toHaveCount(1);
   });
 
   test('Check that the total price in the cart updates correctly when multiple items are added.', async () => {
@@ -72,26 +72,25 @@ test.describe('react shopping cart', () => {
   test('Verify that filtering products by size only shows products available in the selected size.', async () => {
     const textCountBefore = await productsPage.getProductCount();
     const displayCountBefore = await productsPage.getActualProductCount();
-  
+
     const sizes = ['XS', 'S', 'M', 'ML', 'L', 'XL', 'XXL'];
-  
+
     for (const size of sizes) {
       await productsPage.applyFilterByLabel(size);
-  
+
       const textCountAfter = await productsPage.getProductCount();
       const displayCountAfter = await productsPage.getActualProductCount();
-  
+
       expect(textCountBefore).not.toBe(textCountAfter);
       expect(displayCountBefore).not.toBe(displayCountAfter);
-  
+
       if (size !== 'XXL') {
         await productsPage.applyFilterByLabel(size);
       }
     }
-  
+
     await productsPage.applyFilterByLabel('XXL');
   });
-  
 
   test('Check if the product page correctly displays installment information when available.', async () => {
     await productsPage.applyFilterByLabel('L');

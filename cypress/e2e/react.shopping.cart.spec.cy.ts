@@ -85,73 +85,112 @@ describe('react shopping cart', () => {
   it('Ensure that a product can be removed from the shopping cart.', () => {
     productsPage.clickOnAddToCartButton(0);
     cartPage.clickOnRemoveProductFromCartButton(0);
-  
+
     cartPage.cartProductContainer().should('not.exist');
-  
+
     return cartPage
       .cartTotalPrice()
       .invoke('text')
       .then((totalCartPrice) => {
         const totalPrice = parsePrice(totalCartPrice || '');
-  
+
         expect(totalPrice).equal(0);
       });
   });
-  
+
   it('Verify that filtering products by size only shows products available in the selected size.', () => {
-    productsPage.productCount().invoke('text').then((productCountTextBefore) => {
-      const productCountBefore = parseInt(productCountTextBefore.match(/\d+/)[0], 10);
-  
-      productsPage.productContainers().its('length').then((productContainersLengthBefore) => {
-        const sizes = ['XS', 'S', 'M', 'ML', 'L', 'XL', 'XXL'];
-  
-        sizes.forEach(size => {
-          productsPage.clickOnFilterButton(size);
-  
-          productsPage.productCount().invoke('text').then((productCountTextAfterSize) => {
-            const productCountAfterSize = parseInt(productCountTextAfterSize.match(/\d+/)[0], 10);
-  
-            productsPage.productContainers().its('length').then((productContainersLengthAfterSize) => {
-              expect(productContainersLengthBefore).not.eq(productContainersLengthAfterSize);
-              expect(productCountBefore).not.eq(productCountAfterSize);
-  
+    productsPage
+      .productCount()
+      .invoke('text')
+      .then((productCountTextBefore) => {
+        const productCountBefore = parseInt(
+          productCountTextBefore.match(/\d+/)[0],
+          10
+        );
+
+        productsPage
+          .productContainers()
+          .its('length')
+          .then((productContainersLengthBefore) => {
+            const sizes = ['XS', 'S', 'M', 'ML', 'L', 'XL', 'XXL'];
+
+            sizes.forEach((size) => {
               productsPage.clickOnFilterButton(size);
+
+              productsPage
+                .productCount()
+                .invoke('text')
+                .then((productCountTextAfterSize) => {
+                  const productCountAfterSize = parseInt(
+                    productCountTextAfterSize.match(/\d+/)[0],
+                    10
+                  );
+
+                  productsPage
+                    .productContainers()
+                    .its('length')
+                    .then((productContainersLengthAfterSize) => {
+                      expect(productContainersLengthBefore).not.eq(
+                        productContainersLengthAfterSize
+                      );
+                      expect(productCountBefore).not.eq(productCountAfterSize);
+
+                      productsPage.clickOnFilterButton(size);
+                    });
+                });
             });
           });
-        });
       });
-    });
   });
 
   it('Check if the product page correctly displays installment information when available.', () => {
-    productsPage.clickOnFilterButton('L')
+    productsPage.clickOnFilterButton('L');
 
-    productsPage.productContainers().its('length').then((productContainersLength) => {
-      for (let i = 0; i < productContainersLength; i++) {
-        productsPage.productPrices().eq(i).invoke('text').then((productPriceText) => {
-          const productPrice = parseFloat(productPriceText.replace('$', ''));
+    productsPage
+      .productContainers()
+      .its('length')
+      .then((productContainersLength) => {
+        for (let i = 0; i < productContainersLength; i++) {
+          productsPage
+            .productPrices()
+            .eq(i)
+            .invoke('text')
+            .then((productPriceText) => {
+              const productPrice = parseFloat(
+                productPriceText.replace('$', '')
+              );
 
-          productsPage.productInstallmentCounts().eq(i).invoke('text').then((productInstallmentCountText) => {
-            const installmentCountMatches = productInstallmentCountText.match(/\d+/);
+              productsPage
+                .productInstallmentCounts()
+                .eq(i)
+                .invoke('text')
+                .then((productInstallmentCountText) => {
+                  const installmentCountMatches =
+                    productInstallmentCountText.match(/\d+/);
 
-            const installmentCount = installmentCountMatches
-            ? parseInt(installmentCountMatches[0], 10)
-            : 0;
+                  const installmentCount = installmentCountMatches
+                    ? parseInt(installmentCountMatches[0], 10)
+                    : 0;
 
-            productsPage.productInstallmentPrices().eq(i).invoke('text').then((productInstallmentPriceText) => {
-              const installmentPriceMatches =
-              productInstallmentPriceText.match(/\$?(\d+(\.\d{2})?)/);
-      
-              const installmentPrice = installmentPriceMatches
-                ? parseFloat(installmentPriceMatches[1])
-                : 0;
-        
-              const totalInstallmentPrice = installmentPrice * installmentCount;
-              expect(totalInstallmentPrice).closeTo(productPrice, 0.05);
-            })
-          })
-        })
-      }
-    })
+                  productsPage
+                    .productInstallmentPrices()
+                    .eq(i)
+                    .invoke('text')
+                    .then((productInstallmentPriceText) => {
+                      const installmentPriceMatches =
+                        productInstallmentPriceText.match(/\$?(\d+(\.\d{2})?)/);
+
+                      const installmentPrice = installmentPriceMatches
+                        ? parseFloat(installmentPriceMatches[1])
+                        : 0;
+
+                      const totalInstallmentPrice =
+                        installmentPrice * installmentCount;
+                      expect(totalInstallmentPrice).closeTo(productPrice, 0.05);
+                    });
+                });
+            });
+        }
+      });
   });
 });
