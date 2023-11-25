@@ -20,6 +20,7 @@ This project is built upon the React Shopping Cart application originally create
 
 - Node.js
 - NPM
+- Google Chrome
 
 ### Installation
 
