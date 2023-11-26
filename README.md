@@ -26,7 +26,7 @@ This project is built upon the React Shopping Cart application originally create
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/justjoshn/automation-portoflio.git
+   git clone https://github.com/justjoshn/automation-portfolio.git
    ```
 2. Install the dependencies:
    ```bash
