@@ -6,7 +6,7 @@ export class ProductsPage {
 
   filterButton = (labelText: string) =>
     cy.contains('label span', new RegExp(`^${labelText.trim()}$`));
-    
+
   productInstallmentCounts = () => cy.get('[data-cy^="installment-count-"]');
   productInstallmentPrices = () => cy.get('[data-cy^="installment-price-"]');
   productPrices = () => cy.get('[data-cy^="product-price-value-"]');
