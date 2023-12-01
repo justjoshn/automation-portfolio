@@ -31,6 +31,7 @@ This project is built upon the React Shopping Cart application originally create
 2. Install the dependencies:
    ```bash
    npm install
+   npx playwright install (this installs the browsers playwright uses)
    ```
 3. Start the React application:
    ```bash
