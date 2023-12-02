@@ -31,7 +31,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint ./src",
     "format": "prettier --write \"**/*.+(ts|tsx|js|json|css)\"",
-    "cypress:run": "cypress run --browser chrome",
+    "cypress:run": "cypress run --browser chromium",
     "cypress:open": "cypress open",
     "playwright:open": "playwright test --ui",
     "playwright:run": "playwright test --project=chromium"
