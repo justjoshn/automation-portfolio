@@ -28,7 +28,11 @@ This project is built upon the React Shopping Cart application originally create
    ```bash
    git clone https://github.com/justjoshn/automation-portfolio.git
    ```
-2. Install the dependencies:
+2. (If using Linux) Install Cypress prerequisites:
+   ```bash
+   apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libnss3 libxss1 libasound2 libxtst6 xauth xvfb
+   ```
+3. Install dependencies:
    ```bash
    npm install
    ```
@@ -36,11 +40,7 @@ This project is built upon the React Shopping Cart application originally create
    ```bash
    npx playwright install
    ```
-4. (If using Linux) Install Cypress dependencies:
-   ```bash
-   apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libnss3 libxss1 libasound2 libxtst6 xauth xvfb
-   ```
-5. Start the React application:
+4. Start the React application:
    ```bash
    npm start
    ```
