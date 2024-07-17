@@ -25,11 +25,7 @@ export class ProductsPage {
       '[data-cy^="installment-price-"]'
     );
   }
-
-  async clickOnProductAddToCartButton(productIndex: number) {
-    await this.productAddToCartButtons.nth(productIndex).click();
-  }
-
+  
   async getProductCount() {
     const text = await this.productCount.textContent();
     if (text === null) {

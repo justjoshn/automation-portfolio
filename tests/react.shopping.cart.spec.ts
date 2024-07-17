@@ -3,64 +3,63 @@ import { ProductsPage } from '../pages/productsPage';
 import { CartPage } from '../pages/cartPage';
 import { parsePrice } from '../support/utils';
 
-test.describe('react shopping cart', () => {
-  let productsPage: ProductsPage;
-  let cartPage: CartPage;
+let productsPage: ProductsPage;
+let cartPage: CartPage;
 
+test.describe('react shopping cart', () => {
   test.beforeEach(async ({ page }) => {
     productsPage = new ProductsPage(page);
     cartPage = new CartPage(page);
+
     await page.goto('/');
   });
 
   test('Verify that when a user adds a product to the shopping cart, it actually appears in the cart.', async () => {
-    await productsPage.clickOnProductAddToCartButton(0);
-
+    await productsPage.productAddToCartButtons.first().click()
     await expect(cartPage.cartContainer).toBeVisible();
     await expect(cartPage.productCartContainer).toBeVisible();
     await expect(cartPage.productCartContainer).toHaveCount(1);
   });
 
   test('Check that the total price in the cart updates correctly when multiple items are added.', async () => {
-    await productsPage.clickOnProductAddToCartButton(0);
-    await productsPage.clickOnProductAddToCartButton(1);
+    await productsPage.productAddToCartButtons.first().click()
+    await productsPage.productAddToCartButtons.nth(1).click()
 
     const firstCartProductPriceText = await cartPage.cartProductPriceText
       .nth(0)
-      .textContent();
+      .innerText();
 
     const secondCartProductPriceText = await cartPage.cartProductPriceText
       .nth(1)
-      .textContent();
+      .innerText()
 
-    const firstCartProductPrice = parsePrice(firstCartProductPriceText || '');
-    const secondCartProductPrice = parsePrice(secondCartProductPriceText || '');
+    const firstCartProductPrice = parsePrice(firstCartProductPriceText);
+    const secondCartProductPrice = parsePrice(secondCartProductPriceText);
     const sumOfProductsInCart = firstCartProductPrice + secondCartProductPrice;
-    const totalCartPriceText = await cartPage.cartTotalPriceText.textContent();
-    const totalPrice = parsePrice(totalCartPriceText || '');
+    const totalCartPriceText = await cartPage.cartTotalPriceText.innerText();
+    const totalPrice = parsePrice(totalCartPriceText);
 
     expect(sumOfProductsInCart).toBe(totalPrice);
   });
 
   test('Confirm that changing the quantity of a product in the cart updates the total price correctly.', async () => {
-    await productsPage.clickOnProductAddToCartButton(0);
-    await cartPage.clickOnIncreaseQuantityButton(0);
+    await productsPage.productAddToCartButtons.first().click()
+    await cartPage.increaseQuantityButton.first().click();
 
     const firstCartProductPriceText = await cartPage.cartProductPriceText
       .nth(0)
-      .textContent();
+      .innerText();
 
-    const firstCartProductPrice = parsePrice(firstCartProductPriceText || '');
-    const totalCartPriceText = await cartPage.cartTotalPriceText.textContent();
-    const totalPrice = parsePrice(totalCartPriceText || '');
+    const firstCartProductPrice = parsePrice(firstCartProductPriceText);
+    const totalCartPriceText = await cartPage.cartTotalPriceText.innerText();
+    const totalPrice = parsePrice(totalCartPriceText);
 
     expect(totalPrice).toBe(firstCartProductPrice * 2);
   });
 
   test('Ensure that a product can be removed from the shopping cart.', async () => {
-    await productsPage.clickOnProductAddToCartButton(0);
-    await cartPage.clickOnRemoveProductButton(0);
-
+    await productsPage.productAddToCartButtons.first().click()
+    await cartPage.removeProductButton.first().click();
     await expect(cartPage.productCartContainer).not.toBeVisible();
 
     const totalCartPriceText = await cartPage.cartTotalPriceText.textContent();
@@ -72,7 +71,6 @@ test.describe('react shopping cart', () => {
   test('Verify that filtering products by size only shows products available in the selected size.', async () => {
     const textCountBefore = await productsPage.getProductCount();
     const displayCountBefore = await productsPage.getActualProductCount();
-
     const sizes = ['XS', 'S', 'M', 'ML', 'L', 'XL', 'XXL'];
 
     for (const size of sizes) {

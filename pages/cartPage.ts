@@ -31,12 +31,4 @@ export class CartPage {
       '[data-cy^="cart-remove-product-"]'
     );
   }
-
-  async clickOnIncreaseQuantityButton(productIndex: number) {
-    await this.increaseQuantityButton.nth(productIndex).click();
-  }
-
-  async clickOnRemoveProductButton(productIndex: number) {
-    await this.removeProductButton.nth(productIndex).click();
-  }
 }
