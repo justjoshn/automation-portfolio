@@ -1,3 +1,5 @@
+# NEW AUTOMATION-PORTFOLIO IN PROGRESS!! PLEASE GO TO https://github.com/justjoshn/joshs-automation-portfolio
+
 # React Shopping Cart with Cypress and Playwright Automation
 
 ## Overview
